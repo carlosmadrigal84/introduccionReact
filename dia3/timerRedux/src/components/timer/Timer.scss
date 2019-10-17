@@ -1,0 +1,46 @@
+$icon-size: 5vh;
+
+.icon {
+  cursor: pointer;
+  width: $icon-size;
+  height: $icon-size;
+  line-height: $icon-size;
+  font-size: $icon-size;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.start-icon {
+  background: #c0ffcc;
+  color: black;
+}
+
+.stop-icon {
+  background: #ffe6c0;
+  color: black;
+}
+
+.reset-icon {
+  background: #ffc0c0;
+  color: black;
+}
+
+.margin-left {
+  margin-left: 1vh;
+}
+
+.time-up {
+  animation: time-up-spin infinite 5s linear;
+  margin-bottom: 10vh;
+}
+
+@keyframes time-up-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

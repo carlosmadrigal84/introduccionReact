@@ -1,0 +1,22 @@
+.binary-representation-container {
+    display: flex;
+    width: 100%;
+    max-width: 100vh;
+    height: 15vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10vh;
+  }
+  
+  .digit {
+    display: flex;
+    flex: 1;
+    background-color: #282c34;
+    margin: 1vh;
+    border-radius: 20px;
+  }
+  
+  .active {
+    background-color: #9ebaf7;
+  }
+  

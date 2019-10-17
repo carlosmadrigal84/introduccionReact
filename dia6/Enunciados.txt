@@ -1,0 +1,116 @@
+Ejercicio 1
+
+<!--
+    Requisitos
+
+    - Un solo componente: h1 y 2 inputs
+    - El h1 debe tener el valor del 1º input, seguido de un espacio, y el valor del 2º input.
+    
+-->
+
+Ejercicio 2
+
+/* 
+Requisitos V1
+Formulario:
+
+- Título (h1)
+- Input (name)
+- Textarea (description)
+- RadioButton (userRole)
+  - Admin
+  - User
+El título (h1) debe tener como valor: "Formulario de {name}"
+
+Al darle al onSubmit: name > 3 caracteres, description > 10 caractares
+
+Al darle al onSubmit: debajo del formulario se mostrará la descripción escrita
+y una frase que diga se es administrador o usuario normal.
+*/
+
+Ejercicio 3
+
+<!--
+    Requisitos V2
+
+    Partiendo de : https://stackblitz.com/edit/201910-react-second
+
+    - Tendrá 2 rutas:
+        - La 1º "/home" llevará a un componente con un botón que diga "Rellenar formulario" y te lleve a "/form"
+        - La 2º "/form" llevará al componente formulario ya hecho y tendrá el comportamiento que hasta ahora tiene
+        - En caso de que se especifique "name", "description" o "role" a través de queryparams,
+          estos deberán añadirse a los campos correspondientes en el formulario.
+        - Por último, en caso de no tener ninguna ruta especificada te llevará a "/home"
+        
+    Requisitos opcionales:
+        - En caso de que como queryParam se pase un parámetro "submit=true", esto ejecutará
+          el onSubmit de forma automática al renderizar el componente.
+-->
+
+Ejercicio 4
+
+/* 
+Requisitos V3
+https://developers.themoviedb.org/3/getting-started/request-rate-limiting
+
+Se necesita:
+ - Que por defecto se listen las películas recomendadas (https://developers.themoviedb.org/3/discover/movie-discover)
+ - Tener un input de búsqueda libre y que mientras se va escribiendo se busque las películas coincidentes (https://developers.themoviedb.org/3/search/search-movies)
+ - Cuando se haga click en una película iríamos a su detalle.
+
+Por tanto, constaría de como mínimo 2 componentes, uno con el input y el resultado de las películas y otro componente
+para el detalle de las películas.
+
+Se deben usar rutas para este ejercicio.
+
+Opcional:
+ - Input para realizar búsquedas por año
+ - Mostrar el límite actual de peticiones a Movie DB
+ */
+
+Ejericio 5
+
+/* 
+Requisitos V4
+
+(Usando rutas)
+
+Requisitos:
+
+   - Un componente de registro (/register) que pida lo siguiente: Nombre, Apellidos, Año de nacimiento y API Key
+     (this.setState({
+         user: {
+           name: name;
+           surname...
+           ...
+          }
+         }))
+   
+   - Cuando el usuario haga click en el submit del formulario, debemos añadir al contexto la información
+     y pasarla a los siguientes componentes:
+        - Al home donde está el input y la lista de películas (/home) y por defecto tanto en el discover como en la búsqueda
+          las peliculas deben estar filtradas por el campo primary_release_year de dichas APIs con el año de nacimiento
+          del usuario.
+        - A un componente que esté en la ruta /profile que muestre la información del usuario
+        
+   - Si intento acceder a una ruta donde el usuario no exista en el contexto me debe redirigir al registro
+
+
+Nuevos Requisitos:
+	
+	- Si estoy en cualquier componente y en el localStorage está mi usuario, añadirlo al contexto y continuar.
+	- Desde mi perfil, añadir un botón que lo que haga sea, eliminar los datos del localStorage y llevarme a /register
+	- Añadir paginación a la lista de películas
+*/
+
+
+
+
+- Puedes tener varios contextos
+- Enl los componentes del registro, tag es para que "filtre" por las tags que hay en la API.[lifestyle, mobile, motor, work]
+  localhost:3001/tag?mobile
+- Todos los componentes deben pertenecer a una ruta: /Registro,  /Actualizar  /Listado,  /Detail. Cada componente puede tener una ruta.
+- Se puede poner un "string" en las fotos, no hace falta subir fotos.
+- El localStorage sobre el Contexto. Si recargo la web, la web tiene que mantener el nombre del usuario en el localStorage.
+- "Error boundary" da igual si lo haces al principio o al final. SI lo ponemos en el App principal, el error aplicarían a todos los componentes? Si, lo mejor poner en el App.
+- En el listado hay paginación.

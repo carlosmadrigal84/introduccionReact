@@ -1,0 +1,93 @@
+@import "./css/detail2.css";
+
+@font-face {
+  font-family: "Nordic";
+  src: local("../fonts/Nordic.ttf");
+}
+
+.title-logo {
+  font-family: 'Nordic', cursive;
+  font-size: 1.5rem;
+  
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
+a.navbar-item:visited {
+    color:black;
+}
+
+.container {
+  margin: 0;
+}
+
+.width100 {
+  width:100%;
+} 
+
+/* .navbar-item.search {
+  width:100%;
+}
+
+.navbar-start.search {
+  width:100%;
+} */
+
+.navbar-item, .navbar-item:link {
+  text-decoration: none;
+}
+
+.btn-counter, .btn-counter:link {
+  text-decoration: none;
+}
+
+.bd-emoji {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.columns {
+  margin: 0.5rem;
+}
+
+.footer {
+  background: #1fc8db;
+  margin-top: 2.5rem;
+
+}
+
+.is-centered {
+  text-align: center;
+}
+
+#no-results {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#quote-form {
+  margin-top: 25px;
+}
+
+.error-message {
+  color:red;
+}
+
+.list-item {
+  pointer-events: none;
+  cursor: default;
+}
+
+.product-extended > a {
+    pointer-events: none;
+    cursor: default;
+}
