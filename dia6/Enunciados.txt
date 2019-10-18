@@ -114,3 +114,5 @@ Nuevos Requisitos:
 - El localStorage sobre el Contexto. Si recargo la web, la web tiene que mantener el nombre del usuario en el localStorage.
 - "Error boundary" da igual si lo haces al principio o al final. SI lo ponemos en el App principal, el error aplicarían a todos los componentes? Si, lo mejor poner en el App.
 - En el listado hay paginación.
+- Contexto: que es consumer y que provider? provider: permite inyectarle a los hijos el contexto. EL que trabaja directamente con el contexto es el consumer.
+- En el listado
